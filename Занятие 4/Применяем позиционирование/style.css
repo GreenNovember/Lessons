@@ -1,0 +1,54 @@
+.header
+{
+	width: 300px;
+	height: 100px;
+	background: #724c93;
+	color: white;
+}
+
+.content
+{
+	position: relative;
+	width: 400px;
+	height: 180px;
+	background: #28634f;
+	color: white;
+}
+
+.block1
+{
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 200px;
+	height: 50px;
+	background: #3341c3;
+	color: white;
+}
+
+.block2
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 200px;
+	height: 50px;
+	background: #33c1c3;
+	color: white;
+}
+
+.block3
+{
+	width: 200px;
+	height: 50px;
+	background: #9c771d;
+	color: white;
+}
+
+.footer
+{
+	width: 300px;
+	height: 100px;
+	background: #724c93;
+	color: white;
+}
