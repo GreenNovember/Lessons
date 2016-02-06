@@ -11,7 +11,7 @@
 }
 .block1 {
     width: 400px;
-    height: 300px;
+    height: 100px;
     background: white;
     color: black;
 }
@@ -54,7 +54,10 @@
 .block1 p {
     color: black;
 }
-
+.block1 p:first-letter {
+    color: indianred;
+    font-size: 20pt;
+}
 .block1 p:first-line {
     color: purple;
     font-style: italic;
@@ -94,11 +97,6 @@ a:active
 {
     color: #ff0;
     /* Цвет активных ссылок */
-}
-
-p:nth-of-type(4)
-{
-    color: mediumblue;
 }
 
 .footer {
