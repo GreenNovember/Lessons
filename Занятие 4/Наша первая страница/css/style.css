@@ -1,0 +1,147 @@
+body {
+	background-color: #e5f9f4;
+}
+section {
+	width: 100%;
+	position: relative;
+}
+
+.header {
+	position: relative;
+	margin: 0 auto;
+	height: 100px;
+}
+.logo {
+	
+	float: left;
+	padding-left: 20px;
+	width: 200px;
+	height: 95px;
+}
+.menu{
+	
+	float:right; 
+	margin-top:33px;
+	margin-right:20px;
+	font: bold 36px Georgia;
+	word-spacing: 50px;
+	width: 735px;
+}
+ul li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #0c4a43;
+	text-shadow: 1px 1px 4px #0c4a43;	
+}
+
+.forest{
+	background: url("../img/forest.jpg") center;
+	background-repeat: no-repeat;
+	width:1300px;
+	margin: 0 auto;
+	height: 700px;
+}
+
+
+.slogan{
+	width: 530px;
+	font: bold 36px Georgia;
+	padding-top: 500px;
+	padding-left: 20px;
+	color: #e5f9f4;
+	
+}
+
+.content-home{
+	height: 900px;
+}
+.screen2-content{
+	position:relative;
+	width:1300px;
+	margin: 0 auto;
+	height: 900px;
+}
+
+.text-left h1 {
+	color: #44a7d4;
+	padding-top: 30px;
+	//padding-left: 20px;
+	font: bold 35px Georgia;
+}
+.text-left{
+	float:left;
+	font: bold 30px Georgia;
+	padding-top: 30px;
+	padding-left: 20px;
+	width: 550px;
+	color: #062e29;
+	float: left;
+}
+.text-left p{
+	padding-top:30px;
+	width:500px;
+	
+	
+	
+}
+
+.for-image{
+	padding-top:130px;
+	margin: 0 auto;
+	float:right;
+	height:700px;
+	width:650px;
+	
+	
+}
+/*=========================================РАМКИ====================================================*/
+#img1{
+	border-radius: 2%;
+	border: 5px solid #78a19b;	
+	height: 300px;
+	width: 300px;
+	background-color: #a9bdbb;
+	float:left;
+	margin:5px;
+}
+#img2{
+	border-radius: 2%;
+	border: 5px solid #78a19b;
+	height: 300px;
+	width: 300px;
+	background-color: #a9bdbb;
+	float:left;
+	margin:5px;
+}
+#img3{
+	border-radius: 2%;
+	border: 5px solid #78a19b;	
+	height: 300px;
+	width: 300px;
+	background-color: #a9bdbb;
+	float:left;
+	margin:5px;
+}
+#img4{
+	float:left;
+	border-radius: 2%;
+	border: 5px solid #78a19b;	
+	height: 300px;
+	width: 300px;
+	background-color: #a9bdbb;
+	margin:5px;
+}
+/*===================================================================================================*/
+
+.footer{
+	margin: 0 auto;
+	height: 50px;
+	background-color: #71978b;
+	text-align: center;
+	padding-top: 10px;
+	font: bold 20px Georgia;
+	color: #e5f9f4;
+}

@@ -2,38 +2,101 @@
 {
 	width: 300px;
 	height: 100px;
-	background: #724c93;
+	background: white;
 	color: white;
 }
 
 .content
 {
 	width: 300px;
-	background: #28634f;
+	background: white;
 	color: white;
 }
+
 
 .block1
 {	
-	display: inline;
-	width: 200px;
-	background: #3341c3;
-	color: white;
+	width: 400px;
+    height: 100px;
+	background: white;
+	color: black;
 }
+
+.block1:before
+{	
+    content: open-quote;
+    background: red;
+	display: block;
+    float: left;
+	width: 50px;
+    height: 50px;
+    border-radius:25px;
+	color: white;
+    font-size: 30pt;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.block1:after
+{	
+    content: close-quote;
+    background: red;
+	display: block;
+    float: right;
+	width: 50px;
+    height: 50px;
+    border-radius:25px;
+	color: white;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: -50px;
+    margin-right: -10px;    
+}
+
+/*.block1:hover:before,
+.block1:hover:after
+{
+    background: black;
+    transition: 1s;
+}*/
+
+.block1 p
+{
+    color: black;
+}
+
+.block1 p:first-letter
+{
+    color: indianred;
+    font-size: 20pt;
+}
+
+.block1 p:first-line
+{
+    color: purple;
+    font-style: italic;
+}
+
+.block1 p::selection
+{
+    color: red;
+    background: gray;
+    font-style: bold;
+}
+
 
 .block2
 {
-	display: inline;
 	width: 200px;
-	background: #33c1c3;
+	background: white;
 	color: white;
 }
 
 .block3
 {	
-	display: inline;
 	width: 200px;
-	background: #9c771d;
+	background: white;
 	color: white;
 }
 
@@ -41,6 +104,6 @@
 {
 	width: 300px;
 	height: 100px;
-	background: #724c93;
+	background: white;
 	color: white;
 }
