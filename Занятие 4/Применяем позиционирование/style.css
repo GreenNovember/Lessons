@@ -1,57 +1,47 @@
-.header
-{
-	width: 300px;
-	height: 100px;
-	background: white;
-	color: white;
-}
-
-.content
-{
-	width: 300px;
-	background: white;
-	color: white;
-}
-
-
-.block1
-{	
-	width: 400px;
+.header {
+    width: 300px;
     height: 100px;
-	background: white;
-	color: black;
+    background: white;
+    color: white;
 }
-
-.block1:before
-{	
-    content: open-quote;
+.content {
+    width: 300px;
+    background: white;
+    color: white;
+}
+.block1 {
+    width: 400px;
+    height: 100px;
+    background: white;
+    color: black;
+}
+.block1:before {
+    content: attr(one);
     background: red;
-	display: block;
+    display: block;
     float: left;
-	width: 50px;
+    width: 50px;
     height: 50px;
-    border-radius:25px;
-	color: white;
+    border-radius: 25px;
+    color: white;
     font-size: 30pt;
     text-align: center;
     margin-left: 30px;
     margin-right: 10px;
 }
-
-.block1:after
-{	
+.block1:after {
     content: close-quote;
     background: red;
-	display: block;
+    display: block;
     float: right;
-	width: 50px;
+    width: 50px;
     height: 50px;
-    border-radius:25px;
-	color: white;
+    border-radius: 25px;
+    color: white;
     font-size: 30pt;
     text-align: center;
     margin-top: -50px;
-    margin-right: -10px;    
+    margin-right: -10px;
 }
 
 /*.block1:hover:before,
@@ -61,49 +51,57 @@
     transition: 1s;
 }*/
 
-.block1 p
-{
+.block1 p {
     color: black;
 }
-
-.block1 p:first-letter
-{
+.block1 p:first-letter {
     color: indianred;
     font-size: 20pt;
 }
-
-.block1 p:first-line
-{
+.block1 p:first-line {
     color: purple;
     font-style: italic;
 }
-
-.block1 p::selection
-{
+.block1 p::selection {
     color: red;
     background: gray;
     font-style: bold;
 }
-
-
-.block2
-{
-	width: 200px;
-	background: white;
-	color: white;
+.block2 {
+    width: 200px;
+    background: white;
+    color: white;
+}
+.block3 {
+    width: 200px;
+    background: white;
+    color: white;
 }
 
-.block3
-{	
-	width: 200px;
-	background: white;
-	color: white;
+a:link 
+{
+    color: #036;
+    /* Цвет непосещенных ссылок */
+}
+a:visited 
+{
+    color: #606;
+    /* Цвет посещенных ссылок */
+}
+a:hover 
+{
+    color: #f00;
+    /* Цвет ссылок при наведении на них курсора мыши */
+}
+a:active 
+{
+    color: #ff0;
+    /* Цвет активных ссылок */
 }
 
-.footer
-{
-	width: 300px;
-	height: 100px;
-	background: white;
-	color: white;
+.footer {
+    width: 300px;
+    height: 100px;
+    background: white;
+    color: white;
 }
