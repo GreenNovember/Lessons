@@ -17,7 +17,7 @@ section
     position: relative;
     margin: auto;
     width: 400px;
-    height: 380px;
+    height: 400px;
     background: lightgray;
     border-radius: 5px;
     -webkit-box-shadow: 9px 10px 40px -7px rgba(0,0,0,0.5);
@@ -94,7 +94,7 @@ h1
     height: 70px;
     top: -15px;
     left: 5px;
-    border: 1px solid purple;
+    //border: 1px solid purple;
     position: relative;
 }
 
@@ -159,7 +159,6 @@ input[value]
 
 input[type="submit"]
 {
-    margin-top: 5px;
     width: 120px;
     height: 50px;
     background: #6D4A70;
@@ -173,12 +172,12 @@ input[type="submit"]
     float: left;
     margin-left: 5px;
     margin-right: 15px;
+    margin-top: -20px;
 
 }
 
 input[type="submit"]:hover
 {
-    margin-top: 5px;
     width: 120px;
     height: 50px;
     background: #ECECEC;
@@ -208,7 +207,6 @@ input[input="checkbox"]
 .button-label p 
 {
     height: 20px;
-    margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
     color: gray;
     font-size: 10pt;
@@ -249,6 +247,14 @@ label .label-2
     float: left;
 }
 
+.check
+{
+    width: 100%;
+    height: 20px;
+    //border: 1px green solid;
+    position: relative;
+}
+
 .check label
 {
     color: #6D4A70;
@@ -261,7 +267,26 @@ label .label-2
     float: left;
 }
 
+input[type="checkbox"]
+{
+    float: left;
+}
+
 input[type="radio"]
 {
     float: left;
+}
+
+.radio
+{
+    height: 90px;
+}
+
+.radio-1,
+.radio-2
+{
+    width: 20%;
+    //border: 1px solid purple;
+    float: left;
+    margin-right: 10px;
 }
