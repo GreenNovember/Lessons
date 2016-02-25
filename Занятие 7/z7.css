@@ -155,24 +155,36 @@ h1 {
 .four-container {
     width: 580px;
     height: 400px;
-    transform-style: preserve-3d;
-    -webkit-transform: perspective(300px) rotateY(360deg);
-    transform: perspective(300px) rotateY(360deg);
-    border: 1px black solid;
+    perspective: 1000px;
+    animation: rotate-me 3s;
 }
 .four-pic-1 {
     width: 300px;
     height: 300px;
     background: red;
     position: absolute;
-    -webkit-transform: translateZ(150px);
-    transform: translateZ(150px);
+    -webkit-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+    
 }
 .four-pic-2 {
     width: 300px;
     height: 300px;
     position: absolute;
     background: green;
-    -webkit-transform: translateZ(-150px);
-    transform: translateZ(-150px);
+    -webkit-transform: rotateY(60deg);
+    transform: rotateY(60deg);
+    transform: translateZ(200px) rotateY(60deg);
+}
+
+@keyframes rotate-me
+{
+    0%
+    {
+        transform: translateZ(150px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: translateZ(150px) rotateY(360deg);
+    }
 }
