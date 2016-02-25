@@ -1,36 +1,178 @@
-.one
-{
-    width: 400px;
-    height: 400px;
-    background:darkslategray;
+section {
+    width: 100%;
+    position: relative;
+}
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 26pt;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: black;
+}
+.objects-wrapper {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    // border: 1px red solid;
+}
+.objects-align {
+    width: 1700px;
+    height: 1100px;
+    position: relative;
+    margin: auto;
+}
+.one {
+    width: 500px;
+    height: 1100px;
+    float: left;
+    // border: 1px black solid;
+}
+.one-pic {
+    width: 300px;
+    height: 300px;
+    background: darkslategray;
     position: relative;
     animation: move-me 3s infinite;
     transition: 1s;
-}
-
-.one:hover
-{
-    width: 400px;
-    height: 400px;
-    background:darkslategray;
+    -webkit-transition: 1s;
     position: relative;
-    animation: move-me-hover 3s ease-out infinite;
-    transition: 1s;
+    margin: auto;
+    top: 30px;
 }
-
-@keyframes move-me
-{
-    0% {background: darksalmon;}
-    50% {background:deepskyblue;}
-    100% {background: chocolate;}
-}
-
-@keyframes move-me-hover
-{
-    0% {bottom: 30px; 
-        left: 100px;
-        }
-    50%{
-        left: 300px;
+@keyframes move-me {
+    0% {
+        background: darksalmon;
     }
+    50% {
+        background: deepskyblue;
+    }
+    100% {
+        background: chocolate;
+    }
+}
+.one-pic:hover {
+    width: 300px;
+    height: 300px;
+    background: darkslategray;
+    position: relative;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin: auto;
+    top: 30px;
+}
+.one-code {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    margin: auto;
+    top: 100px;
+}
+.two {
+    width: 580px;
+    height: 1100px;
+    float: left;
+    margin-left: 2px;
+    //border: 1px black solid;
+}
+.two-pic {
+    width: 350px;
+    height: 350px;
+    background: url(photo.png) center;
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    margin-right: 150px;
+    animation: scale-me ease-in-out 3s infinite alternate;
+}
+@keyframes scale-me {
+    from {
+        left: 0px;
+        -webkit-transform: scale(1.0) rotate(0deg);
+        transform: scale(1.0) rotate(0deg);
+    }
+    50% {
+        left: 25px;
+        -webkit-transform: scale(0.8) rotate(10deg);
+        transform: scale(0.8) rotate(10deg);
+    }
+    to {
+        left: 50px;
+        -webkit-transform: scale(1.1) rotate(-20deg);
+        transform: scale(1.1) rotate(-20deg);
+    }
+}
+.two-code {
+    position: relative;
+    margin: auto;
+    top: 60px;
+    left: 20px;
+}
+.three {
+    width: 580px;
+    height: 1100px;
+    float: left;
+    margin-left: 2px;
+    //border: 1px black solid;
+}
+.three-pic {
+    width: 350px;
+    height: 350px;
+    left: 50px;
+    background: url(photo.png) center;
+    background-size: contain;
+    position: relative;
+    margin: auto;
+    margin-right: 200px;
+    animation: skew-me 3s infinite;
+}
+@keyframes skew-me {
+    0% {
+        -webkit-transform: skew(10deg, 10deg);
+        transform: skew(10deg, 10deg);
+    }
+    50% {
+        -webkit-transform: skew(-20deg, -20deg);
+        transform: skew(-20deg, -20deg);
+    }
+}
+.three-code {
+    position: relative;
+    margin: auto;
+    top: 60px;
+    left: 20px;
+}
+.four {
+    width: 580px;
+    height: 1100px;
+    float: left;
+    border: 1px black solid;
+}
+.four-container {
+    width: 580px;
+    height: 400px;
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(300px) rotateY(360deg);
+    transform: perspective(300px) rotateY(360deg);
+    border: 1px black solid;
+}
+.four-pic-1 {
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: absolute;
+    -webkit-transform: translateZ(150px);
+    transform: translateZ(150px);
+}
+.four-pic-2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: green;
+    -webkit-transform: translateZ(-150px);
+    transform: translateZ(-150px);
 }
