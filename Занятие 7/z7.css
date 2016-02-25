@@ -1,0 +1,36 @@
+.one
+{
+    width: 400px;
+    height: 400px;
+    background:darkslategray;
+    position: relative;
+    animation: move-me 3s infinite;
+    transition: 1s;
+}
+
+.one:hover
+{
+    width: 400px;
+    height: 400px;
+    background:darkslategray;
+    position: relative;
+    animation: move-me-hover 3s ease-out infinite;
+    transition: 1s;
+}
+
+@keyframes move-me
+{
+    0% {background: darksalmon;}
+    50% {background:deepskyblue;}
+    100% {background: chocolate;}
+}
+
+@keyframes move-me-hover
+{
+    0% {bottom: 30px; 
+        left: 100px;
+        }
+    50%{
+        left: 300px;
+    }
+}
